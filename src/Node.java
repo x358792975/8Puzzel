@@ -63,6 +63,10 @@ public class Node {
 	public int getTotalCost() {
 		return totalCost;
 	}
+	// setter for total cost with two paras
+    public void setTotalCost(int cost, int estimatedCost) {
+        this.totalCost = cost + estimatedCost;
+    }
 
 	public void setTotalCost(int totalCost) {
 		this.totalCost = totalCost;

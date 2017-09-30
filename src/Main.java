@@ -9,13 +9,13 @@ public class Main {
 	public static void main(String[] args) {
 
 		
-		String rootState = EASY;
+		String rootState = MEDIUM;
 		long startTime = System.currentTimeMillis();
 		
 		searchTree search = new searchTree(new Node(rootState), GOAL);	
-		//search.aStar(Heuristic.H_THREE);
-		//search.bestFirstSearch();
-		search.DepthFirstSearch();
+		//search.a_Star(Heuristic._THREE);
+		search.iterativeDeepning(50);
+		//search.DepthFirstSearch();
 		
 		long finishTime = System.currentTimeMillis();
 		long totalTime = finishTime - startTime;

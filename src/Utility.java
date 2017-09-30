@@ -84,7 +84,7 @@ public class Utility {
         String destinationState;
         int cost = 0;
         for (int i = solutionStack.size() - 1; i >= 0; i--) {
-            System.out.println("*************************");
+            //System.out.println("*************************");
             destinationState = solutionStack.get(i).getState();
             if (!sourceState.equals(destinationState)) {
                 System.out.println("Move " + destinationState.charAt(sourceState.indexOf('0')) + " " + findTransition(sourceState, destinationState));
@@ -94,11 +94,11 @@ public class Utility {
 
             sourceState = destinationState;
             System.out.println("Cost of the movement: " + cost);
-            System.out.println("*******");
+            //System.out.println("*******");
             System.out.println("* " + solutionStack.get(i).getState().substring(0, 3)+" *");
             System.out.println("* " + solutionStack.get(i).getState().substring(3, 6)+" *");
             System.out.println("* " + solutionStack.get(i).getState().substring(6, 9)+" *");
-            System.out.println("*******");
+            //System.out.println("*******");
 
         }
         System.out.println("-------------------------------------");
